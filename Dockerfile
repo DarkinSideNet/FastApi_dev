@@ -2,7 +2,7 @@ FROM python:3.10-slim
 
 WORKDIR /app
 
-# Cài đặt các thư viện cần thiết cho scikit-learn/pandas
+
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     && rm -rf /var/lib/apt/lists/*
